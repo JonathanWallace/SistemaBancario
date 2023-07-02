@@ -52,7 +52,7 @@ while True:
 
     elif op == 'e':
         print("Extrato".center(20,'#'))
-        print(extrato)
+        print("Nenhuma movimentação." if not extrato else extrato)
         print(f"Saldo atual: R${saldo:.2f}")
         print("#"*20)
         input("Aperte 'Enter' para continuar.")
