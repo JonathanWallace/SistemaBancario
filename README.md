@@ -8,8 +8,8 @@
  - Sair
 
 E as seguintes regras de negócio:
-[] Apenas 3 saques totais.
-[] Limite de 500,00 para saque.
-[] Não pode depositar ou sacar valores negativos.
+- Apenas 3 saques totais.
+- Limite de 500,00 para saque.
+- Não pode depositar ou sacar valores negativos.
 
 O sistema está em sua versão v1.1
