@@ -1,5 +1,6 @@
 # Sistema Bancario
  Um pequeno projeto de sistema bancário para praticar programação iniciante em Python.
+ Será documentado os avanços nos estudos de Python com esse sistema, através de versões.
 
  Ele conta com as opções:  
  - Depositar
@@ -12,4 +13,12 @@ E as seguintes regras de negócio:
 - Limite de 500,00 para saque.
 - Não pode depositar ou sacar valores negativos.
 
-O sistema está em sua versão v1.1
+Sistema na versão v1:
+Segue o paradigma de programação imperativo.
+
+Sistema na versão v2:
+Segue o paradigma de programação funcional.
+
+Atualmente o sistema está na versão v2.1.
+
+
