@@ -1,23 +1,25 @@
-menu = f"""{' Menu '.center(16,'#')}
+#Criando a variável 'menu' para armazenar a estrutura textual do menu
+menu = f"""{'MENU'.center(16,'=')}
 [d] Depositar
 [s] Sacar
 [e] Extrato
 [q] Sair
-{'#'*16}"""
-
+{'='*16}"""
+#Declarando as variáveis que serão utilizadas nas operações
 saldo: float = 2000
 limite: float = 500
 extrato: str = ''
 numero_saques: int = 0
 LIMITE_SAQUES: int = 3
 
+#Inicio do sistema, pedindo o nome do cliente e iniciando um loop para exibir o 'menu'
 nome: str = input('Informe seu nome: ')
 print(f"Bom dia sr.{nome}. Bem vindo ao JonBank!")
 while True:
     print(menu)
-    op = input('Escolha uma opção: ')
+    op = input('Escolha uma opção: ')#Input da opção do usuário, refêrente ao 'menu'
 
-    if op == 'd':
+    if op == 'd':#Opção 'DEPOSITAR'
         while True:
             try:
                 valor = float(input('Digite o valor a ser depositádo: '))
@@ -32,7 +34,7 @@ while True:
                 print('Valor inválido.')
 
 
-    elif op == 's':
+    elif op == 's':#Opção 'SACAR'
         if numero_saques >= LIMITE_SAQUES:
             print("Limite de saques diários alcançado, volte amanhã.")
         else:
@@ -50,14 +52,14 @@ while True:
                 except:
                     print("Valor inválido.")
 
-    elif op == 'e':
-        print("Extrato".center(20,'#'))
+    elif op == 'e':#Opção 'EXTRATO'
+        print("EXTRATO".center(24,'='))
         print("Nenhuma movimentação." if not extrato else extrato)
         print(f"Saldo atual: R${saldo:.2f}")
-        print("#"*20)
+        print("="*24)
         input("Aperte 'Enter' para continuar.")
 
-    elif op == 'q':
+    elif op == 'q':#Opção 'SAIR'
         break
 
     else:
