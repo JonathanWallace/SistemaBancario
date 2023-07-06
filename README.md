@@ -9,10 +9,13 @@
  - Sair
 
  Na versão v2, ele adiciona as funcionalidades:
+ - Logar
  - Criar Usuário
+ - Acessar Conta
  - Criar Conta Corrente
- - Listar Usuários
  - Listar Contas
+ obs. Agora o sistema tem fluxos de menu baseados nos acessos: Deslogado, Menu de Usuário, Menu de Conta e também agora armazena Usuários e Contas em um arquivo.txt(provisóriamente).
+
 
 E as seguintes regras de negócio:
 - Apenas 3 saques totais.
@@ -27,6 +30,6 @@ Segue o paradigma de programação imperativo.
 Sistema na versão v2:
 Segue o paradigma de programação funcional.
 
-Atualmente o sistema está na versão v2.2.
+Atualmente o sistema está na versão v2.3.
 
 
